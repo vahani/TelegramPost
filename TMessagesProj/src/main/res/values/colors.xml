@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider">#dcdcdc</color>
+    <color name="colorPrimary">#54759e</color>
+    <color name="colorPrimaryDark">#466284</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="timeColor">#EEEEEE</color>
+    <color name="White">#ffffff</color>
+    <color name="holo_blue_light">#33B5E5</color>
+</resources>

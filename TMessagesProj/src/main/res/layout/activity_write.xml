@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/EDTText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/WriteYourPostHere"
+                android:inputType="textMultiLine"
+                android:maxLength="2000"
+                android:minLines="5"
+                android:padding="10dp">
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/attacment_menu_for_post"
+        android:visibility="visible" />
+
+    <Gallery
+        android:id="@+id/ImageGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="bottom" />
+
+</RelativeLayout>

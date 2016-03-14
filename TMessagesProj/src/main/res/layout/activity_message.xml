@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp">
+
+    <RelativeLayout
+        android:id="@+id/Rel_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back3_2"
+        android:padding="5dp">
+
+        <org.telegram.ui.Components.BackupImageView
+            android:id="@+id/UserImage"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/UserImage"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/UserImage"
+            android:gravity="right"
+            android:text="@string/AppName"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtSender"
+            android:layout_below="@+id/txtSender"
+            android:text="@string/AppName"
+            android:textColor="#6B6B6B"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/Rel_Tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txtTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="@string/AppName"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textDate_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtSender"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txtSender"
+            android:text="@string/AppName"
+            android:textColor="#6B6B6B"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TxtMessage_Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtSender"
+            android:layout_below="@+id/txtSender"
+            android:layout_marginTop="5dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/AppName" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Rel_Header"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/back3"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:gravity="right|center_vertical"
+            android:lineSpacingExtra="5dp"
+            android:minLines="3"
+            android:paddingBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/AppName"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/Img_JokePic"
+            style="@style/width_match_parent_max_200"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVideoTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/AppName"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linPicLines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVideoTitle"
+            android:layout_margin="10dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Img_JokePic"
+            android:layout_alignRight="@+id/Img_JokePic"
+            android:padding="3dp"
+            android:text="Time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/timeColor"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtVideoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/AppName"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Img_JokePic"
+            android:layout_alignTop="@+id/Img_JokePic"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/AppName"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/AppName"
+            android:src="@drawable/progress_animation"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FooterPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/main_post"
+        android:background="@drawable/back3_2"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <RelativeLayout
+            android:id="@+id/LikeArea"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/back"
+            android:minWidth="40dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Like"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#6B6B6B"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CommentArea"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/LikeArea"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/LikeArea"
+            android:background="@drawable/back"
+            android:minWidth="40dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/AppName"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/CommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Comments"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#6B6B6B"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/likerlist"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/FooterPM"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/items_1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/liker_list"
+            android:textColor="#6B6B6B" />
+    </RelativeLayout>
+
+</RelativeLayout>

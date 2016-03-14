@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ListView
+            android:id="@+id/listview_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/Home_View"
+        android:padding="4dp"
+        android:src="@drawable/ic_send" />
+
+    <EditText
+        android:id="@+id/emojicon_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/submit_btn"
+        android:layout_toRightOf="@+id/emoji_btn"
+        android:ems="10">
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:id="@+id/Home_View"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/emojicon_edit_text"
+        android:background="@color/holo_blue_light" />
+
+    <ImageView
+        android:id="@+id/emoji_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Home_View"
+        android:padding="4dp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Rel_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <org.telegram.ui.Components.BackupImageView
+            android:id="@+id/UserImage"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/AppName"
+            android:src="@drawable/ic_launcher" />
+
+        <View
+            android:id="@+id/mdiver"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/UserImage"
+            android:layout_toStartOf="@+id/UserImage"
+            android:gravity="right"
+            android:paddingBottom="5dp"
+            android:text="@string/AppName"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

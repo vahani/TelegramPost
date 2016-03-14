@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="like">Like</string>
+    <string name="title_activity_post">Posts</string>
+    <string name="title_activity_write">Write</string>
+    <string name="Send_Post">Send Post</string>
+    <string name="SendingPost">sending Post</string>
+    <string name="please_wait">please wait ...</string>
+    <string name="Sending_Message">Sending Message</string>
+    <string name="WriteYourPostHere">Write something ...</string>
+    <string name="Your_Message_has_been_Send">Your Message has been Sent</string>
+    <string name="liker_list">likes</string>
+    <string name="report_message">Report</string>
+    <string name="delete_post">Delete post</string>
+    <string name="refresh">Refresh</string>
+    <string name="share">Share</string>
+    <string name="Attach_Audio">صوت</string>
+    <string name="Attach_File">فایل</string>
+    <string name="Attach_Contact">مخاطب</string>
+    <string name="Attach_Loacation">موقعیت</string>
+    <string name="Attach">Attach</string>
+    <string name="Return">Back</string>
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+    <string name="RemovedThePost">Posts to be removed</string>
+    <string name="DeleteComment">Delete Comment</string>
+    <string name="CommentIsRemoved">Comment is removed ...</string>
+    <!-- Date Util -->
+    <string name="google_app_id">298327826298</string>
+    <string name="TelegramPost">Telegram Post</string>
+    <string name="Likes">" likes"</string>
+    <string name="Like">like</string>
+</resources>
